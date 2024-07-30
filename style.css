@@ -1,0 +1,291 @@
+body{ 
+    background-color: #b9dfe2d0;
+    margin: 20px;
+    padding: 0;
+}
+
+
+
+
+.fv{
+    margin-bottom: 160px;
+    color: #fff;
+    position: relative;
+}
+
+.fv img{
+    width: 100%;
+    object-fit: cover;
+
+}
+.fv h1{
+    position: absolute;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+    margin-top: -600px;
+    text-align: center;
+    line-height: 1;
+    font-family: 'Amatic SC', cursive;
+    font-size: 80px;
+    color: #fff;
+    
+}
+.fv h1 span{
+    font-size: 30px;
+   
+
+}
+
+
+
+
+
+
+.about{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+   
+}
+.about-img{
+    width: 45%;
+    aspect-ratio: 56/45;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.about-caption{
+    width: 48%;
+    padding-top: 40px;
+    font-family: serif;
+    
+}
+.about-name{
+    font-size: 40px;
+    color: #000000;
+}
+.about-job{
+    margin-top: 4px;
+    font-size: 24px;
+    color: #000000;
+}
+.about-text{
+    margin-top: 24px;
+    font-size: 18px;
+    color: #000000;
+}
+.sns{
+    display: flex;
+    margin-top: 24px;
+    gap: 8px;
+}
+.skill{
+    width: 90%;
+    max-width: 1200px;
+    margin: 120px auto 0 ;
+    text-align: center;
+    color:#000000 ;
+    font-family: serif;
+}
+.skill h2{
+    color: rgb(0, 94, 255);
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 900;
+    
+    
+
+}
+.skill-content{
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+.skill-item{
+    width: 23%;
+    margin-bottom: 1%;
+}
+.skill-item img{
+    width: 100%;
+    aspect-ratio: 29/18;
+   object-fit: cover;
+    border-radius: 8px;
+    margin: 0;
+    
+}
+.skill-item p{
+    padding-right: 1em;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 0 0 0 20px;
+    text-align: center;
+    color: #000000;
+    font-family: serif;
+}
+
+.works li{
+    list-style: none;
+    
+}
+.works{
+    padding-top: 200px;
+  
+}
+
+
+
+
+
+
+
+.works-title{
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    margin-inline: auto;
+    font-size: 24px;
+    letter-spacing: .15em;
+    font-family: serif;
+
+}
+
+.works-title::before{
+    content: "Works";
+    display: inline-block;
+    font-size: 160px;
+    font-weight: 900;
+    line-height: 1;
+    color: rgb(0,94,255) ;
+    position:absolute;
+    bottom: 10%;
+    left: -10%;
+    z-index: -1;
+    opacity: .3;
+    font-family: 'Amatic SC', cursive;
+
+
+}
+.works-li{
+    list-style: none;
+}
+
+.works-list{
+    padding: 0;
+    margin: 60px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 4px 8px;
+  }
+.works-list li ing{
+    width: 100%;
+    aspect-ratio: 16/9; 
+    object-fit: cover;
+}
+.works h2{
+    width: 90%;
+    max-width: 1200;
+    margin: 120px auto 0;
+    color: #000000;
+}
+
+
+ul{
+    padding-inline-start: 0;
+    }
+  
+  
+  /* スマホ版 */
+  @media screen and (max-width: 800px) {
+    .works-title{
+        font-size: 10px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about-img{
+        width: 100%;
+    }
+    .about-caption{
+        width: 100%;
+        ;
+    }
+ } 
+    
+
+
+
+
+/* Loading背景画面設定　*/
+
+#splash {
+    /*fixedで全面に固定*/
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background:#333;
+  text-align:center;
+  color:#fff;
+}
+
+/* Loadingバー中央配置　*/
+#splash_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    z-index: 999;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+/*IE11対策用バーの線の高さ※対応しなければ削除してください*/
+#splash_text svg{
+    height: 2px;
+}
+
+
+
+
+#container{
+    width:100%;
+    height: 100vh;
+    background: #4e5151;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+a{
+    color: #333;
+}
+
+a:hover{
+     text-decoration: none;   
+}
+
+article {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #45a1ff;
+    color: #fff;
+  }
+ 
+   
+
+
+  
+  
